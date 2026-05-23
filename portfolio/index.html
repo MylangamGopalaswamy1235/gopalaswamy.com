@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MYLANGAM GOPALASWAMY — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Custom dot cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Page wrapper -->
+  <div class="page-wrapper">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+
+      <!-- CENTER CONTENT -->
+      <div class="hero-center" data-aos="fade-up">
+
+        <!-- Name -->
+        <h1 class="main-name">MYLANGAM GOPALASWAMY</h1>
+
+        <!-- Tagline -->
+        <div class="tagline">
+          <span class="tag-item">SRMIST</span>
+          <span class="tag-sep">'28</span>
+          <span class="tag-sep">–</span>
+          <span class="tag-item">Builds AI &amp; ML Systems</span>
+        </div>
+
+        <!-- Intro -->
+        <div class="intro-block" data-aos="fade-up" data-aos-delay="100">
+          <p>Innovative developer focused on specializing medical systems and daily productive tools.</p>
+          <p>Academic develop is fully focused in medical systems and also I am a passionate creator building active knowledge partners and medical management systems.</p>
+          <p>Dedicated workflows through intelligent software.</p>
+        </div>
+
+        <!-- THREE COLUMN LINKS -->
+        <div class="three-col" data-aos="fade-up" data-aos-delay="200">
+
+          <!-- LEFT -->
+          <div class="col col-left">
+            <h3 class="col-heading">Explore</h3>
+            <a href="#" class="link-pill" onclick="openModal('projects-modal')"><i class="fa-solid fa-diagram-project"></i>Projects</a>
+            <a href="#" class="link-pill" onclick="openModal('focus-modal')"><i class="fa-solid fa-bolt"></i>Focus / Facts</a>
+            <a href="#" class="link-pill" onclick="openModal('travel-modal')"><i class="fa-solid fa-earth-americas"></i>Triping / Travel</a>
+            <a href="#" class="link-pill" onclick="openModal('skills-modal')"><i class="fa-solid fa-code"></i>Skillsets</a>
+          </div>
+
+          <!-- CENTER -->
+          <div class="col col-center">
+            <h3 class="col-heading">Credentials</h3>
+            <a href="#" class="link-pill" onclick="openModal('cert-modal')"><i class="fa-solid fa-certificate"></i>Certificates</a>
+            <a href="https://leetcode.com/u/7789bWxk1v" target="_blank" class="link-pill"><i class="fa-solid fa-terminal"></i>LeetCode</a>
+            <a href="https://www.codechef.com/users/gopa4637" target="_blank" class="link-pill"><i class="fa-solid fa-fire"></i>CodeChef</a>
+            <a href="https://www.hackerrank.com/profile/gm5840" target="_blank" class="link-pill"><i class="fa-brands fa-hackerrank"></i>HackerRank</a>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="col col-right">
+            <h3 class="col-heading">Connect</h3>
+            <a href="https://www.linkedin.com/in/m-b-gopala-swamy-72607a324" target="_blank" class="link-pill"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+            <a href="https://github.com/MylangamGopalaswamy1235" target="_blank" class="link-pill"><i class="fa-brands fa-github"></i>GitHub</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gm5840@srmist.edu.in" target="_blank" class="link-pill"><i class="fa-solid fa-envelope"></i>Email</a>
+            <a href="GOpalaswamy_Resume.pdf" download="Gopalaswamy_Resume.pdf" target="_blank" class="link-pill link-pill--accent"><i class="fa-solid fa-file-arrow-down"></i>Resume</a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PROFILE IMAGE -->
+      <div class="hero-image-wrap" data-aos="fade-left" data-aos-delay="150">
+        <div class="profile-frame">
+          <img
+            src="image/IMG_20251222_140324.png"
+            alt="Mylangam Gopalaswamy"
+            class="profile-img"
+            onerror="this.style.display='none';"
+          />
+        </div>
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <span>Built with precision &amp; intention &nbsp;·&nbsp; &copy; 2025 MYLANGAM GOPALASWAMY</span>
+    </footer>
+  </div>
+
+  <!-- ===================================================
+       MODALS
+  =================================================== -->
+
+  <!-- PROJECTS MODAL -->
+  <div class="modal-overlay" id="projects-modal" onclick="closeModalOverlay(event, 'projects-modal')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('projects-modal')"><i class="fa-solid fa-xmark"></i></button>
+      <h2 class="modal-title"><i class="fa-solid fa-diagram-project"></i> Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="proj-icon"><img src="project icon/imagecap.jpg" alt="Image Caption Icon" onerror="this.style.display='none';" /></div>
+          <div class="proj-header-row">
+            <h3>Image Caption Generator</h3>
+            <span class="proj-timeline"><i class="fa-regular fa-calendar"></i> May 2025</span>
+          </div>
+          <p>AI model that automatically generates descriptive captions from uploaded images using deep learning.</p>
+          <div class="proj-tags"><span>Python</span><span>AI/ML</span><span>Computer Vision</span></div>
+          <a href="https://codsoft-five-tawny.vercel.app/" target="_blank" class="proj-live-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Link</a>
+        </div>
+        <div class="project-card">
+          <div class="proj-icon"><img src="project icon/syndrom.jpg" alt="Syndrome Detector Icon" onerror="this.style.display='none';" /></div>
+          <div class="proj-header-row">
+            <h3>Syndrome Detector</h3>
+            <span class="proj-timeline"><i class="fa-regular fa-calendar"></i> Aug 2025 - Nov 2025</span>
+          </div>
+          <p>Analyzes symptoms via multiple input sources — manual input, sensor data, and camera — to predict possible medical causes.</p>
+          <div class="proj-tags"><span>Python</span><span>Django</span><span>AI</span><span>Medical</span></div>
+          <a href="https://app-project-xi.vercel.app/" target="_blank" class="proj-live-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Link</a>
+        </div>
+        <div class="project-card">
+          <div class="proj-icon"><img src="project icon/doctor.jpg" alt="Doctor Evaluation Icon" onerror="this.style.display='none';" /></div>
+          <div class="proj-header-row">
+            <h3>Doctor Performance Evaluation System</h3>
+            <span class="proj-timeline"><i class="fa-regular fa-calendar"></i> Jan 2026 - March 2026</span>
+          </div>
+          <p>Measures doctor performance based on treatment quality, clarity, and efficiency for better healthcare outcomes.</p>
+          <div class="proj-tags"><span>Django</span><span>Data Analysis</span></div>
+          <a href="https://dbms-project-rust-eight.vercel.app/" target="_blank" class="proj-live-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Link</a>
+        </div>
+        <div class="project-card">
+          <div class="proj-icon"><img src="project icon/smartnotes ai.jpg" alt="SmartNotes AI Icon" onerror="this.style.display='none';" /></div>
+          <div class="proj-header-row">
+            <h3>AI Notes App</h3>
+            <span class="proj-timeline"><i class="fa-regular fa-calendar"></i> Jan 2026 - March 2026</span>
+          </div>
+          <p>Auto-generates and organizes notes using AI. Creates dynamic folders by context, includes task reminders with alarms, and analyses duplicate content.</p>
+          <div class="proj-tags"><span>Python</span><span>AI</span><span>Productivity</span></div>
+          <a href="https://drive.google.com/file/d/16wipBPqfML5vngdsW6FnTrLSWi_87-Jp/view?usp=sharing" target="_blank" class="proj-live-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Link</a>
+        </div>
+        <div class="project-card">
+          <div class="proj-icon"><img src="project icon/djkstar.jpg" alt="Djkstar Algorithm Icon" onerror="this.style.display='none';" /></div>
+          <div class="proj-header-row">
+            <h3>Djkstar Algorithm</h3>
+            <span class="proj-timeline"><i class="fa-regular fa-calendar"></i> March 2026</span>
+          </div>
+          <p>Advanced graph algorithm implementation using Djkstar's method to determine optimal network root node by calculating minimum total shortest-path distances.</p>
+          <div class="proj-tags"><span>Django</span><span>Python</span><span>Algorithms</span></div>
+          <a href="https://daa-project-tgcy.vercel.app/" target="_blank" class="proj-live-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOCUS / FACTS MODAL -->
+  <div class="modal-overlay" id="focus-modal" onclick="closeModalOverlay(event, 'focus-modal')">
+    <div class="modal-box modal-wide">
+      <button class="modal-close" onclick="closeModal('focus-modal')"><i class="fa-solid fa-xmark"></i></button>
+      <h2 class="modal-title"><i class="fa-solid fa-bolt"></i> Focus &amp; Facts</h2>
+      <div class="focus-facts-grid">
+        <div class="focus-col">
+          <h3 class="ff-heading">🎯 Focus</h3>
+          <ol class="ff-list">
+            <li>Build real-world problem-solving applications, not just academic demos</li>
+            <li>Combine AI + Web Development for practical use cases</li>
+            <li>Focus on automation and smart decision-making systems</li>
+            <li>Improve user experience with simple, intuitive interfaces</li>
+            <li>Develop systems that analyze data and provide insights</li>
+            <li>Work on healthcare-related AI solutions for impact</li>
+            <li>Integrate multi-page workflows (sensor, camera, inputs) into applications</li>
+            <li>Emphasize security and data handling (password strength, storage)</li>
+            <li>Build modular and scalable applications using Python &amp; Django</li>
+            <li>Create tools that reduce manual effort using AI assistance</li>
+          </ol>
+        </div>
+        <div class="facts-col">
+          <h3 class="ff-heading">💡 Facts</h3>
+          <ol class="ff-list">
+            <li>The Image Caption project automatically generates captions from uploaded images using AI models</li>
+            <li>The Syndrome Detector analyzes symptoms via multiple input sources (manual, sensor, camera)</li>
+            <li>The Syndrome system predicts possible causes based on symptom combinations</li>
+            <li>The Doctor Performance Evaluation System measures performance based on treatment quality, clarity, and efficiency</li>
+            <li>The AI Notes App automatically generates and organizes notes using AI</li>
+            <li>The Notes system creates folders dynamically based on content context</li>
+            <li>The app includes a task reminder system with alarm functionality</li>
+            <li>The Notes dashboard analyzes duplicate content and repeated words for better clarity</li>
+            <li>The Djkstar Algorithm implementation determines optimal network root nodes using shortest-path distances</li>
+            <li>All projects prioritize intuitive design, efficient workflows, and secure data handling</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRAVEL MODAL -->
+  <div class="modal-overlay" id="travel-modal" onclick="closeModalOverlay(event, 'travel-modal')">
+    <div class="modal-box modal-wide">
+      <button class="modal-close" onclick="closeModal('travel-modal')"><i class="fa-solid fa-xmark"></i></button>
+      <h2 class="modal-title"><i class="fa-solid fa-earth-americas"></i> Triping / Travel</h2>
+
+      <div class="travel-section">
+        <h3 class="travel-heading"><i class="fa-solid fa-mountain"></i> Climbing / Hill Stations</h3>
+        <div class="place-grid">
+          <a href="https://www.google.com/maps/search/?api=1&query=Munnar+Kerala" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Munnar, Kerala</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Ooty+Tamil+Nadu" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Ooty, Tamil Nadu</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Kodaikanal+Tamil+Nadu" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Kodaikanal</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Coimbatore+Tamil+Nadu" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Coimbatore</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Bangalore+Karnataka" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Bangalore</a>
+        </div>
+      </div>
+
+      <div class="travel-section">
+        <h3 class="travel-heading"><i class="fa-solid fa-gopuram"></i> Temples — Tamil Nadu</h3>
+        <div class="place-grid">
+          <a href="https://www.google.com/maps/search/?api=1&query=Srirangam+Ranganathaswamy+Temple+Trichy" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Sri Rangam, Trichy</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Meenakshi+Amman+Temple+Madurai" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Madurai Meenakshi Amman</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Uppiliappan+Temple+Kumbakonam" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Upiliyappan</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Thiruvekka+Yathothkari+Perumal+Temple" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Thiruvetka</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Veeraraghava+Swamy+Temple+Tiruvallur" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Veera Raghava Swamy, Tiruvallur</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Rajagopalaswamy+Temple+Mannargudi" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Manarkudi</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Kovilpatti+Tamil+Nadu" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Kovilpatti</a>
+        </div>
+      </div>
+
+      <div class="travel-section">
+        <h3 class="travel-heading"><i class="fa-solid fa-gopuram"></i> Temples — Andhra Pradesh</h3>
+        <div class="place-grid">
+          <a href="https://www.google.com/maps/search/?api=1&query=Tirumala+Venkateswara+Temple+Tirupati" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Tirumala Tirupati</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Kanaka+Durga+Temple+Vijayawada" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Vijayawada Kanaka Durgamma</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Amaravathi+Andhra+Pradesh" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Amaravathi Lingeshwara</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Srisailam+Mallikarjuna+Temple" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Srisailam</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Kota+Andhra+Pradesh" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Kota</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Nellore+Andhra+Pradesh" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Nellore</a>
+        </div>
+      </div>
+
+      <div class="travel-section">
+        <h3 class="travel-heading"><i class="fa-solid fa-gopuram"></i> Temples — Karnataka</h3>
+        <div class="place-grid">
+          <a href="https://www.google.com/maps/search/?api=1&query=Udupi+Krishna+Temple+Karnataka" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Udupi</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Murudeshwar+Temple+Karnataka" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Murudeshwar</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Sringeri+Sharada+Temple+Karnataka" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Sringeri</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Kukke+Subramanya+Temple+Karnataka" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Kukke Subramanya</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Chamundeshwari+Temple+Mysore" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Mysore — Meyla Kottai</a>
+        </div>
+      </div>
+
+      <div class="travel-section">
+        <h3 class="travel-heading"><i class="fa-solid fa-gopuram"></i> Temples — Maharashtra</h3>
+        <div class="place-grid">
+          <a href="https://www.google.com/maps/search/?api=1&query=Shirdi+Sai+Baba+Temple" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Pune → Shirdi</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Pandharpur+Vithoba+Temple+Maharashtra" target="_blank" class="place-card"><i class="fa-solid fa-location-dot"></i>Panduranga Swamy, Pandharpur</a>
+        </div>
+      </div>
+
+      <div class="travel-section">
+        <h3 class="travel-heading"><i class="fa-solid fa-car"></i> Long Drives</h3>
+        <div class="place-grid">
+          <a href="https://www.google.com/maps/dir/Chennai/Vijayawada" target="_blank" class="place-card drive-card"><i class="fa-solid fa-route"></i>Chennai → Vijayawada</a>
+          <a href="https://www.google.com/maps/dir/Chennai/Mangalore" target="_blank" class="place-card drive-card"><i class="fa-solid fa-route"></i>Chennai → Mangalore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLSETS MODAL -->
+  <div class="modal-overlay" id="skills-modal" onclick="closeModalOverlay(event, 'skills-modal')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('skills-modal')"><i class="fa-solid fa-xmark"></i></button>
+      <h2 class="modal-title"><i class="fa-solid fa-code"></i> Skillsets</h2>
+      <div class="skills-section">
+        <h3 class="skill-cat"><i class="fa-solid fa-keyboard"></i> Languages</h3>
+        <div class="skill-chips">
+          <span>C</span><span>C++</span><span>UML</span><span>Python</span>
+          <span>Java</span><span>SQL</span><span>Kotlin</span><span>XML</span>
+        </div>
+      </div>
+      <div class="skills-section">
+        <h3 class="skill-cat"><i class="fa-solid fa-wrench"></i> Tools / Platforms</h3>
+        <div class="skill-chips">
+          <span>VS Code</span><span>GitHub</span><span>Android Studio</span>
+        </div>
+      </div>
+      <div class="skills-section">
+        <h3 class="skill-cat"><i class="fa-solid fa-database"></i> Databases</h3>
+        <div class="skill-chips">
+          <span>MySQL</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATES MODAL -->
+  <div class="modal-overlay" id="cert-modal" onclick="closeModalOverlay(event, 'cert-modal')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('cert-modal')"><i class="fa-solid fa-xmark"></i></button>
+      <h2 class="modal-title"><i class="fa-solid fa-certificate"></i> Certificates</h2>
+      <div id="cert-gallery" class="cert-gallery">
+        <!-- Certificates are dynamically loaded by script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATE PREVIEW MODAL -->
+  <div class="modal-overlay" id="cert-preview-modal" onclick="closeModalOverlay(event, 'cert-preview-modal')">
+    <div class="modal-box cert-preview-box">
+      <button class="modal-close" onclick="closeModal('cert-preview-modal')"><i class="fa-solid fa-xmark"></i></button>
+      <div class="cert-preview-content">
+        <img id="cert-preview-img" src="" alt="Certificate" />
+        <h3 id="cert-preview-name"></h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       DEXTER CHATBOT
+  =================================================== -->
+
+  <!-- Dexter bubble -->
+  <div class="chat-bubble" id="chatBubble" onclick="toggleChat()">
+    <div class="dexter-face" id="dexterFace">
+      <img
+        id="dexterImg"
+        src="dexter icon/1369019019.jpg"
+        alt="Dexter"
+        style="width:100%;height:100%;object-fit:cover;border-radius:50%;"
+        onerror="this.style.display='none';"
+      />
+    </div>
+    <span class="ask-label">Ask me anything!</span>
+  </div>
+
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header">
+      <div class="chat-avatar-wrap">
+        <img
+          src="dexter icon/1369019019.jpg"
+          alt="Dexter"
+          style="width:40px;height:40px;object-fit:cover;border-radius:50%;"
+          onerror="this.style.display='none';"
+        />
+      </div>
+      <div>
+        <p class="chat-name">Dexter</p>
+        <p class="chat-status"><span class="status-dot"></span>Project Guide</p>
+      </div>
+      <button class="chat-close" onclick="toggleChat()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+      <div class="msg msg-bot">
+        <p>Hi! I'm <strong>Dexter</strong> 👾 I can tell you about Gopalaswamy's projects. Ask me anything about them!</p>
+      </div>
+    </div>
+
+    <div class="typing-indicator" id="typingIndicator" style="display:none;">
+      <span></span><span></span><span></span>
+    </div>
+
+    <div class="chat-input-row">
+      <input type="text" id="chatInput" placeholder="Ask about projects…" onkeydown="handleKey(event)" />
+      <button onclick="sendMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
